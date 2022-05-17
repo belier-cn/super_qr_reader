@@ -72,7 +72,7 @@ class QrcodeReaderViewState extends State<QrcodeReaderView>
     openFlashlight = false;
     _initAnimation();
 
-    SchedulerBinding.instance?.addPostFrameCallback((_) async {
+    SchedulerBinding.instance.addPostFrameCallback((_) async {
       bool isOk = await getPermissionOfCamera();
       if (isOk) {
         setState(() {

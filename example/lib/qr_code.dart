@@ -18,7 +18,7 @@ class _ScanQrcodePageState extends State<ScanQrcodePage> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance?.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       final _widget = QrcodeReaderView(
         key: _key,
         onScan: onScan,
